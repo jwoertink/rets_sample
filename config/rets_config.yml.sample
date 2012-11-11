@@ -1,0 +1,8 @@
+url: 'http://some.rets.system.com'
+username: 'your_username'
+password: 'your_password'
+rets_version: '1.8'
+auth_mode: :digest
+useragent:
+  name: 'your_user_agent_name'
+

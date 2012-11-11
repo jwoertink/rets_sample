@@ -1,0 +1,47 @@
+********THESE ARE JUST RANDOM NOTES FOR MYSELF*******
+
+search_type: "well-known resource names"
+  http://retsdoc.onconfluence.com/display/RETS180Final/11.2+System-Level+Metadata#11.2System-LevelMetadata-Table114WellKnownResourceNames
+  ActiveAgent
+  Agent
+  History
+  Office
+  OpenHouse
+  Property
+  Prospect
+  Tax
+  Tour
+  
+  
+class: "well-known class names"
+  http://retsdoc.onconfluence.com/display/RETS180Final/11.3.1+Class#11.3.1Class-Table1112aWellKnownClassNames
+  
+  ActiveAgent
+  Agent
+  History
+  Office
+  OpenHouse
+  Prospect
+  Tax
+  Tour
+  ResidentialProperty
+  LotsAndLand
+  MultiFamily
+  
+
+type: "well-known object types"
+  http://retsdoc.onconfluence.com/display/RETS180Final/11.4.1+Object#11.4.1Object-Table1120WellknownObjectTypes
+  Photo
+  Plat
+  Video
+  Audio
+  Thumbnail
+  Map
+  VRImage
+
+
+get_object(
+  :resource => same as search_type
+  :type => well known types
+
+)  
