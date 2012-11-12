@@ -1,9 +1,10 @@
 GIT
-  remote: git://github.com/Placester/ruby-rets.git
-  revision: 9a5c01c0c3d2cffb11b1e34ca09923aa0fd0cda4
+  remote: git://github.com/jwoertink/tourets.git
+  revision: 39f9b0c18f72e8f735177cf1052b45e83eaedbe3
   specs:
-    ruby-rets (2.0.5)
-      nokogiri (~> 1.5.0)
+    tourets (0.0.1)
+      railties (>= 3.1)
+      ruby-rets
 
 GEM
   remote: https://rubygems.org/
@@ -87,7 +88,9 @@ GEM
     rake (0.9.2.2)
     rdoc (3.12)
       json (~> 1.4)
-    sass (3.2.2)
+    ruby-rets (2.0.5)
+      nokogiri (~> 1.5.0)
+    sass (3.2.3)
     sass-rails (3.2.5)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -114,7 +117,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
   rails (= 3.2.8)
-  ruby-rets!
   sass-rails (~> 3.2.3)
   sqlite3
+  tourets!
   uglifier (>= 1.0.3)

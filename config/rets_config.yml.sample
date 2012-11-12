@@ -1,8 +1,15 @@
-url: 'http://some.rets.system.com'
-username: 'your_username'
-password: 'your_password'
-rets_version: '1.8'
-auth_mode: :digest
-useragent:
-  name: 'your_user_agent_name'
-
+-
+  mls: 'GLVAR'
+  url: 'http://las.rets.interealty.com/Login.asmx/Login'
+  username: 'user'
+  password: 'secret'
+  rets_version: '1.8'
+  auth_mode: :digest
+  useragent:
+    name: 'user_agent_connector'
+-
+	mls: 'OTHER'
+	url: 'http://some.rets.system.com/Login'
+	username: 'username'
+	password: 'supersecret'
+	auth_mode: :basic

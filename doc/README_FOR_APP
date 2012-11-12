@@ -39,29 +39,3 @@ type: "well-known object types"
   Map
   VRImage
 
-
-get_object(
-  :resource => same as search_type
-  :type => well known types
-
-)  
-
-
-
-
-
-
-
-
-# This is Active Properties & Contingent
-"242" => "ER,EA,C"
-
-# This is IDX Display
-"1809" => "Y"
-
-# This is Internet Display
-'130' => "Y"
-
-
-
-

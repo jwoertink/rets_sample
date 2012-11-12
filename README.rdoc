@@ -1,17 +1,12 @@
 = Rets on Rails Sample App
-This is a sample rails app using the ruby-rets gem. This will be a way to test out building a rets-rails gem.
+This is a sample rails app using the tourets and ruby-rets gems.
 
 == Install
 just clone it, and add in a `config/rets_config.yml` file. You can copy the sample in that folder as an example.
 
 
-== Future
-Here's some example of what I'd like to see
+== Use
 
-RETS::Property.all
+	TouRETS.establish_connection('SOME_MLS')
+	@properties = TouRETS::Property.where(:bedrooms => 2)
 
-RETS::Property.scope('EA,ER,C').limit(10)
-
-RETS::Property.search(:list_price => 100000..200000, :bedrooms => 4)
-
-RETS::Office.all
