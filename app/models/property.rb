@@ -5,20 +5,29 @@ class Property
   end
   
   def search(params = {}, &block)
-    filter = hash_to_str(params)
-    # class is some kind of number...
-    # "11", "1", "4", "5", "6", "7", "8", "9", "12", "14", "16"
+    # Find only active properties
+    params.merge!("242" => "ER,EA,C", "1809" => "Y", "130" => "Y")
+    filter = hash_to_rets_str(params)
+    
     @client.search(:search_type => :Property, :class => "1", :query => filter, &block)
+  end
+  
+  def get_object
+    @client.get_object(:resource => :Property, :type => :Photo, :location => false, :id => "1:0:*") do |object|
+      puts "Object-ID #{object[:headers]['Object-ID']}, Content-ID #{object[:headers]['Content-ID']}, Description #{object[:headers]['Description']}"
+      puts "Data"
+      puts object[:content]
+    end
   end
   
   private
   
-    def hash_to_str(hash)
-      str = ""
+    def hash_to_rets_str(hash)
+      str = []
       hash.each_pair do |k,v|
         str << "(#{k.to_s.camelize}=#{v})"
       end
-      str
+      str.join(',')
     end
   
 end
